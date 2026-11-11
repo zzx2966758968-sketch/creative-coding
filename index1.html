@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rotating Rectangle</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #eeeeee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .rectangle {
+      width: 240px;
+      height: 120px;
+      background: #333333;
+      border-radius: 50%;
+      animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rectangle"></div>
+</body>
+</html>
